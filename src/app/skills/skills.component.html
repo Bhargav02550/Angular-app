@@ -1,0 +1,11 @@
+<p>skills works!</p>
+
+<div *ngFor="let m of CSEService.courses">{{ m }}</div>
+<button (click)="addcourse()">
+    ADD COURSE
+</button>
+<br>
+<a routerLink="/skills/tskills">TECHNICAL SKILLS</a>
+<br>
+<a routerLink="/skills/pskills">PROFESSIONAL SKILLS</a>
+<router-outlet></router-outlet>

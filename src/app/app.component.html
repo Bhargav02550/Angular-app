@@ -25,6 +25,107 @@
 
 <!-- <button (click)="disp()">Click Me!</button> -->
 
+<!-- <button (click)="click($event)">Click Me</button> -->
+<!-- <h1>{{msg}}</h1> -->
 
-<button (click)="click()">Click Me</button>
-<h1>{{msg}}</h1>
+<!-- Two way data binding-->
+
+<!-- <input type="text" (input)="cserocks($event)"/>
+<h1>{{csemsg}}</h1> -->
+
+<!-- <input type="text" [(ngModel)] = "csemsgs()"> -->
+<!-- <h1>{{csemsg}}</h1> -->
+
+<!-- <h1>Welcome to Structurual Directives</h1>
+<h1 *ngIf="show">Demo for ng-if</h1>
+<h1 *ngIf="csevalue == 'Mean Stack'; else csee">Demo for if and else</h1>
+<ng-template #csee>
+  <h1>PLEASE ENTER CORRECT VALUE</h1>
+</ng-template> -->
+<!-- <div *ngFor="let i of [1,2,3,4,5]">
+  <h1>NUMBER IS : {{i}} </h1>
+</div> -->
+
+<!-- <table border="1">
+  <th>
+    <tr>
+      <th>NAME</th>
+      <th>BRANCH</th>
+      <th>CITY</th>
+    </tr>
+  </th>
+  <tbody>
+    <tr *ngFor="let cse of users">
+      <td>{{ cse.name }}</td>
+      <td>{{ cse.branch }}</td>
+      <td>{{ cse.city }}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <div [ngSwitch]="itsme">
+  <div *ngSwitchCase="1">
+    NUMBER IS ONE
+  </div>
+  <div *ngSwitchCase="2">
+    NUMBER IS TWO
+  </div>
+  <div *ngSwitchCase="3">
+    NUMBER IS THREE
+  </div>
+  <div *ngSwitchCase="4">
+    NUMBER IS FOUR
+  </div>
+  <div *ngSwitchCase="5">
+    NUMBER IS FIVE
+  </div>
+  <div *ngSwitchDefault>
+    NO CASE MATCHED
+  </div>
+</div> -->
+
+<!-- <div [ngSwitch]="ope">
+  <div *ngSwitchCase="'+'">
+    {{n1 + n2}}
+  </div>
+  <div *ngSwitchCase="'*'">
+    {{n1 * n2}}
+  </div>
+  <div *ngSwitchDefault="">
+    INVALID OPERATION
+  </div>
+</div> -->
+
+<!-- Two way data binding-->
+
+<!-- <input type="text" [(ngModel)]="cseb" /> -->
+<!-- <div [ngSwitch]="cseb">
+  <div *ngSwitchCase="'Mean Stack'">{{ cseb }} IS MEAN STACK</div>
+  <div *ngSwitchCase="'DEVOPS'">{{ cseb }} IS DEVOPS</div>
+  <div *ngSwitchDefault>INVALID FACULTY</div>
+</div> -->
+
+<!-- <h1>WELCOME TO PIPES</h1>
+<h1>{{ name | titlecase }}</h1>
+<h1>{{ 15000 | currency : "INR" }}</h1>
+<h1>{{ csedate | date : "dd/MM/yyyy HH:mm:ss" }}</h1>
+<h1>{{ csedate | date : "shortTime" }}</h1>
+<h1>{{ 0.6854 | percent }}</h1>
+<h1>{{ data | json }}</h1>
+<h1>{{ courses | slice : 2 : 6 }}</h1>
+<h1>{{ pebs | csepipe }}</h1> -->
+
+<h1>WELCOME TO ROUTING IN ANGULAR JS</h1>
+<ul>
+  <li><a routerLink="" routerLinkActive="active">HOME</a></li>
+  <li>
+    <a routerLink="profile" routerLinkActive="active">PROFILE</a>
+  </li>
+  <li>
+    <a routerLink="skills" routerLinkActive="active">SKILLS</a>
+  </li>
+  <li>
+    <a routerLink="students" routerLinkActive="active">STUDENT</a>
+  </li>
+</ul>
+<router-outlet></router-outlet>

@@ -1,0 +1,22 @@
+<h1>WELCOME TO STUDENT COMPONENT</h1>
+
+<button (click)="show()">
+  <div *ngIf="chk == true">HIDE</div>
+  <div *ngIf="chk == false">SHOW</div>
+</button>
+<div *ngIf="chk == true">
+  <table>
+    <tr>
+      <th>NAME</th>
+      <th>ID</th>
+      <th>BRANCH</th>
+      <th>CITY</th>
+    </tr>
+    <tbody *ngFor="let items of stud.students">
+      <td>{{ items.name }}</td>
+      <td>{{ items.id }}</td>
+      <td>{{ items.branch }}</td>
+      <td>{{items.city}}</td>
+    </tbody>
+  </table>
+</div>

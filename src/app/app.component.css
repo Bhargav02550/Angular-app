@@ -24,3 +24,26 @@
     border: 2px dashed purple;
     background-color: black;
 }
+
+ul li{
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    background-color: purple;
+    color: white;
+}
+
+a{
+    margin: 0px 20px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+/* .active{
+    background-color: violet;
+} */
